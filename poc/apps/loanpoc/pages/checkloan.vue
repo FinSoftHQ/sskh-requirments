@@ -23,6 +23,7 @@
       <ul style="list-style-type: disc; padding-left: 20px; text-align: left;">
         <li><strong>สิทธิ์ขอสินเชื่อ (เบื้องต้น):</strong> {{ isEligible ? 'มีสิทธิ์' : 'ไม่มีสิทธิ์' }}</li>
         <li><strong>เป็นสมาชิกมาแล้ว (ปี):</strong> {{ memberYears }} years</li>
+        <li><strong>หนี้คงค้าง (บาท):</strong> 0.00 </li>
         <li v-if="isEligible"><strong>วงเงินสินเชื่อ (บาท - เบื้องต้น):</strong> {{ formattedLoanAmount }}</li>
       </ul>
     </div>
